@@ -9,4 +9,4 @@ type Action interface {
 }
 
 // Actions is an executable set of [Action]s.
-type Actions []Action
+type Actions = []Action
