@@ -1,3 +1,28 @@
+/*
+The multiplier package provides a collection of functions used to help scale tests with
+the complexity multipliers present in the production code.
+
+A complexity multiplier represents a concept that multiplies the surface area and complexity
+of other proximal features, for example, database transactions are complexity modifiers, as
+when adding many new database actions such as a new filter operation, the new action must be
+tested both with, and without a transaction - the transaction concept multiplies the complexity
+of the system.
+
+Complexity multipliers are represented in this package by the [Multiplier] interface.  Concrete
+implementations of this interface should be defined in the packages consuming this package, and then
+registered by calling [Register].  This is typically done in an `init` function in the package defining
+the concrete type.
+
+Once all desired [Multiplier]s have been registered, [Init] should be called in order to select
+which of the registered multipliers are active and should be used to modify the set of actions provided
+to [Apply].
+
+[Apply] should be called once per test, and will modify the given set of actions in order to test the
+active complexity multipliers.
+
+[Multiplier]s do not have any impact during action execution, they act only on the action set itself,
+redefining, creating or deleting elements from the test definition *before* the action set executes.
+*/
 package multiplier
 
 import (
