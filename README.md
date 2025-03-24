@@ -5,7 +5,7 @@ This repository provides a shared language for writing tests across Source Netwo
 
 ### Example consumption
 
-The following example taken from the Defra CLI package, and shows a simple test `TestSchemaAdd` along with the shared test executor for the test-package.
+The following example was taken from the Defra CLI package, and shows a simple test `TestSchemaAdd` along with the shared test executor for the test-package.
 ```
 // testing.go
 
