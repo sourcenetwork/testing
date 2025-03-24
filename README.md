@@ -36,8 +36,6 @@ func (test *Test) Execute(t testing.TB) {
 
 	multiplier.Skip(t, test.Includes, test.Excludes)
 
-	actions := prependStart(test.Actions)
-
 	actions = multiplier.Apply(actions)
 
 	testing.Log(t, actions)
