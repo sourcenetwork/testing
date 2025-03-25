@@ -1,3 +1,3 @@
-module github.com/sourcenetwork/testing
+module github.com/sourcenetwork/testo
 
 go 1.23
