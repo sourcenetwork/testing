@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/sourcenetwork/testing/action"
+	"github.com/sourcenetwork/testo/action"
 )
 
 var activeMultipliers []Multiplier

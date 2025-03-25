@@ -1,4 +1,4 @@
-package stest
+package testo
 
 import (
 	"bytes"
@@ -6,8 +6,8 @@ import (
 	"fmt"
 	stdT "testing"
 
-	"github.com/sourcenetwork/testing/action"
-	"github.com/sourcenetwork/testing/multiplier"
+	"github.com/sourcenetwork/testo/action"
+	"github.com/sourcenetwork/testo/multiplier"
 )
 
 // Execute this set of actions, serially, in order.
